@@ -29,8 +29,9 @@ let weather = {
   },
 };
 let geocode = {
+  apiKey: token,
   revereseGeocode: (latitude, longitude) => {
-    var api_key = "Your weather API key goes here"; // opencagedata
+    var api_key = token; // opencagedata
     var api_url = "https://api.opencagedata.com/geocode/v1/json";
 
     var request_url =
